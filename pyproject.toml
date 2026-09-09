@@ -1,0 +1,33 @@
+# Comfy Registry manifest. Generated shape follows `comfy node init`.
+#
+# ⚠️ TWO FIELDS ARE IMMUTABLE ONCE PUBLISHED — confirm them BEFORE the first
+#    `comfy node publish`:
+#      - [project].name        → goes into the node URL, cannot change
+#      - [tool.comfy].PublisherId → must equal the publisher you created, cannot change
+#    DisplayName and Icon CAN change later.
+
+[project]
+name = "comfyui-teamtoken"
+description = "Veo, Seedance, Kling and nano-banana — video & image generation through one teamToken API key."
+version = "1.0.0"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.9"
+# torch, numpy and Pillow ship with ComfyUI — pinning them risks a resolver
+# conflict, so we only declare the one dependency ComfyUI does not guarantee.
+# (ComfyUI-Manager git-clone installs read requirements.txt; the registry install
+#  path reads this list — the two are kept in sync deliberately.)
+dependencies = ["requests"]
+# OS-independent: the nodes are pure HTTP + tensor glue with no native build.
+# No GPU classifier — generation runs server-side, so any machine can run these.
+classifiers = ["Operating System :: OS Independent"]
+
+[project.urls]
+# The registry and the ComfyUI-Manager entry both point users here.
+Repository = "https://github.com/TeamToken-store/ComfyUI-teamToken"
+Documentation = "https://github.com/TeamToken-store/ComfyUI-teamToken#readme"
+"Bug Tracker" = "https://github.com/TeamToken-store/ComfyUI-teamToken/issues"
+
+[tool.comfy]
+PublisherId = "teamtoken"
+DisplayName = "ComfyUI-teamToken"
+Icon = "icon.svg"

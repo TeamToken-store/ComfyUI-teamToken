@@ -1,0 +1,308 @@
+[
+  {
+    "model": "gpt-image-2-high-1k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.32
+  },
+  {
+    "model": "gpt-image-2-high-2k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.63
+  },
+  {
+    "model": "gpt-image-2-high-4k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.94
+  },
+  {
+    "model": "gpt-image-2-low-1k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.06
+  },
+  {
+    "model": "gpt-image-2-low-2k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.07
+  },
+  {
+    "model": "gpt-image-2-low-4k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.08
+  },
+  {
+    "model": "gpt-image-2-medium-1k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.1
+  },
+  {
+    "model": "gpt-image-2-medium-2k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.19
+  },
+  {
+    "model": "gpt-image-2-medium-4k",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.29
+  },
+  {
+    "model": "grok-image",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.02
+  },
+  {
+    "model": "nano-banana-2",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.027
+  },
+  {
+    "model": "nano-banana-pro",
+    "modality": "image",
+    "billing_unit": "per_image",
+    "unit_price_usd": 0.027
+  },
+  {
+    "model": "grok-video-480p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0067
+  },
+  {
+    "model": "grok-video-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0133
+  },
+  {
+    "model": "kling-2.1-10s-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "kling-2.1-10s-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.045
+  },
+  {
+    "model": "kling-2.1-5s-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "kling-2.1-5s-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.05
+  },
+  {
+    "model": "kling-2.5-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.055
+  },
+  {
+    "model": "kling-2.5-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.045
+  },
+  {
+    "model": "kling-2.5-720p-relax",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.03
+  },
+  {
+    "model": "kling-2.6-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.065
+  },
+  {
+    "model": "kling-2.6-1080p-audio",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.085
+  },
+  {
+    "model": "kling-2.6-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.045
+  },
+  {
+    "model": "kling-2.6-motion-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.06
+  },
+  {
+    "model": "kling-2.6-motion-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.045
+  },
+  {
+    "model": "kling-3.0-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "kling-3.0-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.065
+  },
+  {
+    "model": "kling-3.0-edit-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.09
+  },
+  {
+    "model": "kling-3.0-edit-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "kling-3.0-motion-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.095
+  },
+  {
+    "model": "kling-3.0-motion-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.065
+  },
+  {
+    "model": "kling-o1-1080p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "kling-o1-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.065
+  },
+  {
+    "model": "omni-flash-10s",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.05
+  },
+  {
+    "model": "omni-flash-4s",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.025
+  },
+  {
+    "model": "omni-flash-6s",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0333
+  },
+  {
+    "model": "omni-flash-8s",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0417
+  },
+  {
+    "model": "seedance-2-fast-480p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.075
+  },
+  {
+    "model": "seedance-2-fast-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.18
+  },
+  {
+    "model": "seedance-2-omni-fast",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.11
+  },
+  {
+    "model": "seedance-2-omni-pro",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.17
+  },
+  {
+    "model": "seedance-2-pro-480p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.095
+  },
+  {
+    "model": "seedance-2-pro-720p",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.18
+  },
+  {
+    "model": "veo-2",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0333
+  },
+  {
+    "model": "veo-3.1-fast-fullhd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0067
+  },
+  {
+    "model": "veo-3.1-fast-hd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0067
+  },
+  {
+    "model": "veo-3.1-fullhd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.1667
+  },
+  {
+    "model": "veo-3.1-hd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.1667
+  },
+  {
+    "model": "veo-3.1-lite-fullhd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0067
+  },
+  {
+    "model": "veo-3.1-lite-hd",
+    "modality": "video",
+    "billing_unit": "per_second",
+    "unit_price_usd": 0.0067
+  }
+]

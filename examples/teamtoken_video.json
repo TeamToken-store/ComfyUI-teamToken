@@ -1,0 +1,41 @@
+{
+  "last_node_id": 1,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "TeamTokenVideo",
+      "pos": [420, 220],
+      "size": [420, 320],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        { "name": "image", "type": "IMAGE", "link": null, "shape": 7 }
+      ],
+      "outputs": [
+        { "name": "video", "type": "VIDEO", "links": null, "slot_index": 0 },
+        { "name": "video_path", "type": "STRING", "links": null },
+        { "name": "job_id", "type": "STRING", "links": null },
+        { "name": "cost_usd", "type": "STRING", "links": null }
+      ],
+      "properties": { "Node name for S&R": "TeamTokenVideo" },
+      "widgets_values": [
+        "veo-3.1-fast-hd",
+        "a corgi surfing a neon wave at sunset, cinematic slow motion",
+        0,
+        "16:9",
+        "",
+        0,
+        "fixed",
+        "",
+        ""
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

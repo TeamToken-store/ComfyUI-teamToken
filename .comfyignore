@@ -1,0 +1,8 @@
+# Keep the registry archive to what a user needs to run the nodes.
+# Syntax is .gitignore-style.
+tests/
+examples/
+*.md
+!README.md
+.github/
+.gitignore

@@ -1,0 +1,5 @@
+# ComfyUI-Manager installs these on a git-clone install. Kept in sync with the
+# [project].dependencies list in pyproject.toml (used by the registry install).
+# torch, numpy and Pillow are provided by ComfyUI itself and are deliberately not
+# pinned here to avoid a resolver conflict with the host install.
+requests
