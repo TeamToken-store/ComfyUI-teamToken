@@ -1,0 +1,32 @@
+# Runs the offline wire-layer tests on every push and pull request.
+#
+# The suite needs no ComfyUI install and no network: torch and the ComfyUI
+# runtime are stubbed in sys.modules, and the HTTP transport is replaced with an
+# in-memory fake (see the module docstring in tests/test_wire.py). So the only
+# things to install are the three libraries ComfyUI would otherwise provide.
+#
+# The matrix pins the floor declared in pyproject.toml (requires-python >= 3.9)
+# together with the versions current and upcoming ComfyUI builds ship, because a
+# claim of 3.9 support that nothing executes is a claim that rots.
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the libraries ComfyUI provides at runtime
+        run: python -m pip install --upgrade pip requests numpy Pillow
+      - name: Run the wire-layer suite
+        run: python tests/test_wire.py
