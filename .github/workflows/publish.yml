@@ -4,6 +4,12 @@
 # created under the publisher that owns [tool.comfy].PublisherId.
 name: Publish to Comfy Registry
 
+# The registry key is the only secret here, and the job below hands it to a
+# third-party action, so this workflow gets no more of the repository than it
+# needs: read the code, write nothing.
+permissions:
+  contents: read
+
 on:
   push:
     branches: [main]
@@ -32,8 +38,11 @@ jobs:
           else
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
+      # Pinned to a commit, not @main or a tag: this action receives the
+      # publishing key, and both a branch and a tag can be moved to code we
+      # never reviewed. Bump it deliberately after reading the diff.
       - name: Publish node
         if: steps.gate.outputs.publish == 'true'
-        uses: Comfy-Org/publish-node-action@main
+        uses: Comfy-Org/publish-node-action@d2366e7abb6ab16f3bb03e3520ae25c8cf749bc9  # 1.0.1
         with:
           personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}

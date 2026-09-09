@@ -10,6 +10,9 @@
 # claim of 3.9 support that nothing executes is a claim that rots.
 name: tests
 
+permissions:
+  contents: read
+
 on:
   push:
   pull_request:
