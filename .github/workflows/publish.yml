@@ -38,15 +38,17 @@ jobs:
           else
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
-      # Pinned to a commit, not @main or a tag: this action receives the
-      # publishing key, and both a branch and a tag can be moved to code we
-      # never reviewed. Bump it deliberately after reading the diff.
+      # @main on purpose, which is what that action's own README prescribes.
+      # Its main (d2366e7, 2025-05-10) is 6 commits ahead of the newest release:
+      # tags 1.0.0 and 1.0.1 both sit on 7578cdb from 2024-05-16, whose steps
+      # accept comfy-cli tracking and then disable it, while main never enables
+      # it. So the tag is the stale option here, not the safe one.
       #
-      # d2366e7 is that repository's main as of 2025-05-10, its latest commit.
-      # It is deliberately NOT the 1.0.1 tag: both 1.0.0 and 1.0.1 point at the
-      # older 7578cdb, so pinning the tag would run code two commits behind.
+      # Known trade-off: a moving reference receives the publishing key, so
+      # whatever lands on that branch next runs here without review. Replace
+      # @main with a full commit sha to stop that.
       - name: Publish node
         if: steps.gate.outputs.publish == 'true'
-        uses: Comfy-Org/publish-node-action@d2366e7abb6ab16f3bb03e3520ae25c8cf749bc9
+        uses: Comfy-Org/publish-node-action@main
         with:
           personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
