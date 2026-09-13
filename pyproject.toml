@@ -30,4 +30,4 @@ Documentation = "https://github.com/TeamToken-store/ComfyUI-teamToken#readme"
 [tool.comfy]
 PublisherId = "teamtoken"
 DisplayName = "ComfyUI-teamToken"
-Icon = "icon.svg"
+Icon = "https://raw.githubusercontent.com/TeamToken-store/ComfyUI-teamToken/main/icon.svg"
